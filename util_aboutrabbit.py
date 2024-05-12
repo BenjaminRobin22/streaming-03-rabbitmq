@@ -21,7 +21,7 @@ run the following command: python util_aboutrabbit.py
 
 @Author: Denise Case
 @Updated: 2023-08
-
+BR had to reinstall with Chocolatry but it worked after this. 
 ==========================================================================
 
 """

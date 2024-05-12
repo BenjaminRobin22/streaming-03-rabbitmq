@@ -24,6 +24,8 @@ run the following command: python util_aboutenv.py
 @Author: Denise Case
 @Updated: 2023-08
 
+Completed BR virtual envirnment actived .venv
+
 ==========================================================================
 
 """

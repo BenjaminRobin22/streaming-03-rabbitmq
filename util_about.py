@@ -2,7 +2,7 @@
 ======================= INSTRUCTOR-GENERATED FILE =============================
 Source: https://github.com/denisecase/nw-diagnostics-python/
 ================================================================================
-
+Ben Robin complete - all checks were completed.  
 PURPOSE:
 - Generate information about the local machine and Python installation.
 - Help detect common issues.

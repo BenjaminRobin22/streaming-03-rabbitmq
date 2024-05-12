@@ -44,6 +44,7 @@ def process_message(ch, method, properties, body):
     - properties: Message properties like content_type or delivery_mode.
                   Not used here since we're focused on the message body.
     - body: The body of the message (the actual content).
+    BR messages received updates made 
     """
     logger.info(f"Received: {body.decode()}")
 

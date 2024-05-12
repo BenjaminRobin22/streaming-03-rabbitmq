@@ -14,27 +14,27 @@ We create the environment as a subfolder of this repo named .venv to keep it awa
 
 ## Prerequisites
 
-1. Git
-1. Python 3.7+ (3.11+ preferred)
-1. VS Code Editor
-1. VS Code Extension: Python (by Microsoft)
-1. RabbitMQ Server installed and running locally
+1. Git ✓
+1. Python 3.7+ (3.11+ preferred) ✓
+1. VS Code Editor ✓
+1. VS Code Extension: Python (by Microsoft) ✓
+1. RabbitMQ Server installed and running locally  ✓
 
 ## Before You Begin
 
-1. Fork this starter repo into your GitHub account.
-1. Clone your repo down to your machine.
-1. Explore your new project repo in VS Code on your local machine.
+1. Fork this starter repo into your GitHub account. ✓
+1. Clone your repo down to your machine. ✓
+1. Explore your new project repo in VS Code on your local machine. ✓
 
 ## Task 1. Create a Python Virtual Environment
 
-We will create a local Python virtual environment to isolate our project's third-party dependencies from other projects.
+We will create a local Python virtual environment to isolate our project's third-party dependencies from other projects. ✓
 
-1. Open a terminal window in VS Code.
-1. Use the built-in Python utility venv to create a new virtual environment named `.venv` in the current directory.
+1. Open a terminal window in VS Code.✓
+1. Use the built-in Python utility venv to create a new virtual environment named `.venv` in the current directory. ✓
 
 ```shell
-python -m venv .venv
+python -m venv .venv ✓
 ```
 
 Verify you get a new .venv directory in your project. 
@@ -44,10 +44,10 @@ We use .venv as the name to keep it away from our project files.
 
 In the same VS Code terminal window, activate the virtual environment.
 
-- On Windows, run: `.venv\Scripts\activate`
+- On Windows, run: `.venv\Scripts\activate` ✓
 - On Linux/MacOS, run: `source .venv/bin/activate`
 
-Verify you see the virtual environment name (.venv) in your terminal prompt.
+Verify you see the virtual environment name (.venv) in your terminal prompt. ✓
 
 ## Task 3. Install Dependencies into the Virtual Environment
 
@@ -67,7 +67,7 @@ Make sure you can see the .venv name in your terminal prompt before running this
 In your VS Code terminal window, run the following commands to help verify your setup.
 These util files MAY be helpful to ensure you're setup correctly. 
 You may have a different configuration and RabbitMQ may still work; the check looks in common places, but may not work for all installations. 
-They are meant to be helpful, but are not required.
+They are meant to be helpful, but are not required. ✓
 
 ```shell
 python util_about.py
@@ -81,24 +81,24 @@ pip list
 
 ## Task 5. Read
 
-1. Read the [RabbitMQ Hello World! tutorial](https://www.rabbitmq.com/tutorials/tutorial-one-python.html)
-1. Read the code and comments in our 2 project files: emit_message.py and listen_for_messages.py
+1. Read the [RabbitMQ Hello World! tutorial](https://www.rabbitmq.com/tutorials/tutorial-one-python.html)  
+1. Read the code and comments in our 2 project files: emit_message.py and listen_for_messages.py 
 
 Don't worry if it doesn't all make sense the first time. 
 Approach it like a puzzle and see what you can figure out. 
 
 ## Task 6. Execute the Producer/Sender
 
-1. Read v1_emit_message.py (and the tutorial)
-1. Run the file. 
+1. Read v1_emit_message.py (and the tutorial) ✓
+1. Run the file.  BR - [x] Sent 'Hello World!'
 
 It will run, emit a message to the named RabbitMQ queue, and finish.
 We can execute additional commands in the terminal as soon as it finishes. 
 
 ## Task 7. Execute the Consumer/Listener
 
-1. Read v1_listen_for_messages.py (and the tutorial)
-1. Run the file.
+1. Read v1_listen_for_messages.py (and the tutorial) ✓
+1. Run the file.  [x] Received 'Hello World!'
 
 You'll need to fix an error in the program to get it to run.
 Once it runs successfully, will it terminate on its own? How do you know? 
@@ -106,16 +106,24 @@ As long as the process is running, we cannot use this terminal for other command
 
 ## Task 8. Open a New Terminal / Emit More Messages
 
-1. Open a new terminal window.
+1. Open a new terminal window. ✓
 1. Use this new window to run emit_message.py again.
-1. Watch the listing terminal - what do you see?  A second message?
+1. Watch the listing terminal - what do you see?  A second message?  [x] Received 'Hello World!'
 
 Sending the same message each time is kind of boring. This time:
 
-1. Where is the message defined? How can you change it?
+1. Where is the message defined? How can you change it? BR -here - 
+ if __name__ == "__main__":    send_message("llllocalhost", "hello", "Hello World!")
 1. Modify emit_message.py to emit a different message. 
 1. Execute the updated emit_message.py. 
-1. Watch what happens in the listening terminal.
+1. Watch what happens in the listening terminal. 
+
+![alt text](image-1.png)
+
+[x] Received "Ben Robin's new message"
+[x] Received "This is Ben Robin's second message"
+[x] Received "This is Ben Robin's third message"
+ [x] Received "This is Ben Robin's final message"
 
 Repeat this process several times - emit at least 4 different messages.
 Don't worry - it's just code. We can always revert back (try the 'undo' command in VS Code) to a version that works. You can't hurt anything.
@@ -155,7 +163,7 @@ Each of the version 2 programs include an error as well.
 1. When we open a connection, we should close the connection. 
 1. Which of the 4 files will always close() the connection?
 1. Search GitHub for if __name__ == "__main__":
-1. How many hits did you get? 
+1. How many hits did you get? BR -16m commits and 5.6m code results
 1. Learn and understand this common Python idiom.
 
 ## Reference

@@ -1,4 +1,4 @@
-# See Hello World! Example at
+# See Hello World! Example at Ben Robin complete
 # https://www.rabbitmq.com/tutorials/tutorial-one-python.html
 import pika, sys, os
 
